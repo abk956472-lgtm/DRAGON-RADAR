@@ -1,0 +1,1 @@
+export class DNSEngine{async lookup(){throw new Error("DNS lookup requires a permitted public resolver/source; no unauthorized scanning is performed.")}}

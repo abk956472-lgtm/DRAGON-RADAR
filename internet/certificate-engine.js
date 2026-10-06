@@ -1,0 +1,1 @@
+export class CertificateEngine{async lookup(domain){return{domain,source:"Certificate Transparency",status:"not queried"}}}

@@ -1,0 +1,1 @@
+export class MotionSensor{constructor(){this.name="motion"}status(){return{available:"DeviceMotionEvent"in window}}}

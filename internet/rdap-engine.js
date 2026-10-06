@@ -1,0 +1,1 @@
+export class RDAPEngine{async lookup(domain){return{domain,source:"RDAP",status:"not queried"}}}

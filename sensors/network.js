@@ -1,0 +1,1 @@
+export class NetworkSensor{constructor(){this.name="network"}status(){return{available:"connection"in navigator}}}

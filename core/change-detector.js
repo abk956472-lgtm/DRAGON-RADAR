@@ -1,0 +1,1 @@
+export class ChangeDetector{compare(previous,current){return JSON.stringify(previous)!==JSON.stringify(current)}}

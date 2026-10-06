@@ -1,0 +1,1 @@
+export class TouchSensor{constructor(){this.name="touch"}status(){return{available:"ontouchstart"in window}}}

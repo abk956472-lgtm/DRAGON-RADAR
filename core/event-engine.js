@@ -1,0 +1,1 @@
+export class EventEngine{constructor(){this.events=[]}emit(type,data={}){const e={id:crypto.randomUUID(),type,data,time:new Date().toISOString()};this.events.push(e);return e}list(){return [...this.events]}}

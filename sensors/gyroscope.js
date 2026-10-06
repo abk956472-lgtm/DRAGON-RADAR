@@ -1,0 +1,1 @@
+export class GyroscopeSensor{constructor(){this.name="gyroscope"}status(){return{available:"Gyroscope"in window}}}

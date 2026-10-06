@@ -1,0 +1,1 @@
+export class Authorization{constructor(){this.authorizedTargets=new Set()}add(target){this.authorizedTargets.add(target)}isAuthorized(target){return this.authorizedTargets.has(target)}}

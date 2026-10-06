@@ -1,0 +1,1 @@
+export const Privacy={localOnly:true,externalUpload:false}

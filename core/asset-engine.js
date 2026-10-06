@@ -1,0 +1,1 @@
+export class AssetEngine{normalize(asset){return {...asset,id:asset.id||crypto.randomUUID(),updatedAt:new Date().toISOString()}}}

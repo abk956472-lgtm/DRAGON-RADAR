@@ -1,0 +1,1 @@
+export class OrientationSensor{constructor(){this.name="orientation"}status(){return{available:"DeviceOrientationEvent"in window}}}

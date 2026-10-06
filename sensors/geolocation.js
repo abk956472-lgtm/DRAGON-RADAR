@@ -1,0 +1,1 @@
+export class GeolocationSensor{constructor(){this.name="geolocation"}status(){return{available:"geolocation"in navigator}}}

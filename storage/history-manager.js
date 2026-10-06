@@ -1,0 +1,1 @@
+export class HistoryManager{constructor(){this.items=[]}add(x){this.items.push({...x,time:new Date().toISOString()})}list(){return [...this.items]}}

@@ -1,0 +1,1 @@
+export class RadarEffects{pulse() {return Date.now()}}

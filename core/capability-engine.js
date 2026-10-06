@@ -1,0 +1,1 @@
+export class CapabilityEngine{static detect(){return{secureContext:location.protocol==="https:"||location.hostname==="localhost",touch:"ontouchstart"in window,motion:"DeviceMotionEvent"in window,orientation:"DeviceOrientationEvent"in window,geolocation:"geolocation"in navigator,battery:"getBattery"in navigator,network:"connection"in navigator}}}

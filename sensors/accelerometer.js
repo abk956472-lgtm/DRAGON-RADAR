@@ -1,0 +1,1 @@
+export class AccelerometerSensor{constructor(){this.name="accelerometer"}status(){return{available:"Accelerometer"in window}}}

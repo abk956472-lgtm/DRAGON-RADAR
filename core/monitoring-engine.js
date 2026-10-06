@@ -1,0 +1,1 @@
+export class MonitoringEngine{constructor(){this.targets=new Map()}add(target){this.targets.set(target.id,target)}remove(id){this.targets.delete(id)}list(){return [...this.targets.values()]}}

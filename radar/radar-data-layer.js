@@ -1,0 +1,1 @@
+export class RadarDataLayer{constructor(){this.data=[]}set(data){this.data=data}get(){return this.data}}

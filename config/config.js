@@ -1,0 +1,1 @@
+export default {name:"DRAGON-RADAR",version:"1.0.0",mode:"core",ai:false,localOnly:true}

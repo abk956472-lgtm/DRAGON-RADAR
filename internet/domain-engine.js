@@ -1,0 +1,1 @@
+export class DomainEngine{validate(domain){return typeof domain==="string"&&/^[a-z0-9.-]+$/i.test(domain)}}

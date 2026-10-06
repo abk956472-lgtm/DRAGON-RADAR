@@ -1,0 +1,1 @@
+export class StorageManager{history(){return JSON.parse(localStorage.getItem("dragon-radar-history")||"[]")}alerts(){return JSON.parse(localStorage.getItem("dragon-radar-alerts")||"[]")}saveHistory(x){localStorage.setItem("dragon-radar-history",JSON.stringify(x))}}

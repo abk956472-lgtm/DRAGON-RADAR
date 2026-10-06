@@ -1,0 +1,1 @@
+export class SourceManager{constructor(){this.sources=[]}add(source){this.sources.push(source)}list(){return [...this.sources]}}

@@ -1,0 +1,1 @@
+export class MagnetometerSensor{constructor(){this.name="magnetometer"}status(){return{available:"Magnetometer"in window}}}

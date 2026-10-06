@@ -1,0 +1,1 @@
+export class BatterySensor{constructor(){this.name="battery"}status(){return{available:"getBattery"in navigator}}}

@@ -1,0 +1,1 @@
+export class Database{constructor(name="dragon-radar"){this.name=name}async open(){return indexedDB.open(this.name,1)}}

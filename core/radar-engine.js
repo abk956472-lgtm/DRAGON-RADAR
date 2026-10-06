@@ -1,0 +1,1 @@
+export class RadarEngine{constructor(){this.objects=new Map()}upsert(o){this.objects.set(o.id,o)}remove(id){this.objects.delete(id)}list(){return [...this.objects.values()]}}

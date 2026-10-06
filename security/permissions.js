@@ -1,0 +1,1 @@
+export class PermissionManager{async query(name){try{return await navigator.permissions?.query({name})}catch{return null}}}
