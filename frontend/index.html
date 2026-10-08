@@ -5,113 +5,228 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>DRAGON-RADAR</title>
+  <meta name="theme-color" content="#03070c">
+
+  <title>DRAGON-RADAR | Command Center</title>
 
   <link rel="stylesheet" href="./frontend/styles.css">
 </head>
 
 <body>
 
-  <main>
+  <main class="dragon-app">
 
-    <div class="dragon-header">
+    <!-- HEADER -->
 
-      <div>
-        <span class="dragon-label">
-          DRAGON // SYSTEM
-        </span>
+    <header class="dragon-header">
 
-        <h1>DRAGON-RADAR</h1>
+      <div class="dragon-brand">
 
-        <p>
-          Internet & Device Intelligence Core
-        </p>
-      </div>
+        <div class="dragon-symbol">D</div>
 
-      <div class="core-indicator">
-        <span class="core-dot"></span>
-        CORE ONLINE
-      </div>
+        <div>
+          <span class="dragon-label">
+            ARTIFICIAL INTELLIGENCE SYSTEM
+          </span>
 
-    </div>
+          <h1>DRAGON-RADAR</h1>
 
-
-    <section class="radar-panel">
-
-      <div class="panel-title">
-        <span>RADAR CORE</span>
-        <span>LIVE</span>
-      </div>
-
-      <div class="radar-preview">
-
-        <div class="radar-circle">
-          <div class="radar-scan"></div>
-
-          <div class="radar-cross horizontal"></div>
-          <div class="radar-cross vertical"></div>
-
-          <div class="radar-core">
-            DRAGON
-          </div>
+          <p>Internet & Device Intelligence Core</p>
         </div>
 
       </div>
 
-      <div class="radar-status">
-        <span>● SCANNING</span>
-        <span>SYSTEM READY</span>
+      <div class="core-indicator">
+        <span class="core-dot"></span>
+
+        <div>
+          <strong>DRAGON CORE</strong>
+          <small>INITIALIZING STATUS...</small>
+        </div>
+      </div>
+
+    </header>
+
+
+    <!-- NAVIGATION -->
+
+    <nav class="dragon-navigation">
+
+      <a class="active" href="./index.html">
+        الرئيسية
+      </a>
+
+      <a href="./frontend/dashboard.html">
+        لوحة القيادة
+      </a>
+
+      <a href="./frontend/radar.html">
+        الرادار
+      </a>
+
+      <a href="./frontend/sensors.html">
+        المستشعرات
+      </a>
+
+      <a href="./frontend/history.html">
+        السجل
+      </a>
+
+      <a href="./frontend/alerts.html">
+        التنبيهات
+      </a>
+
+      <a href="./frontend/settings.html">
+        الإعدادات
+      </a>
+
+    </nav>
+
+
+    <!-- SYSTEM STATUS -->
+
+    <section class="dragon-system-status">
+
+      <div class="status-light"></div>
+
+      <div>
+        <strong>حالة النظام</strong>
+        <span id="status">جاري تهيئة النواة...</span>
+      </div>
+
+      <span class="status-tag">CORE STATUS</span>
+
+    </section>
+
+
+    <!-- MAIN RADAR -->
+
+    <section class="radar-panel">
+
+      <div class="panel-heading">
+
+        <div>
+          <span class="panel-kicker">TACTICAL INTERFACE</span>
+          <h2>الرادار المركزي</h2>
+        </div>
+
+        <span class="scanning-badge">
+          <span class="status-light"></span>
+          RADAR ACTIVE
+        </span>
+
+      </div>
+
+      <div class="radar-stage">
+
+        <!-- هذا هو الرادار الحقيقي الذي يرسمه app.js -->
+
+        <canvas
+          id="radar"
+          width="700"
+          height="700"
+          aria-label="رادار DRAGON"
+        ></canvas>
+
+      </div>
+
+      <div class="radar-footer">
+
+        <div>
+          <span class="metric-label">ENGINE</span>
+          <strong>CANVAS 2D</strong>
+        </div>
+
+        <div>
+          <span class="metric-label">SCAN MODE</span>
+          <strong>VISUAL SCAN</strong>
+        </div>
+
+        <div>
+          <span class="metric-label">TARGET MODE</span>
+          <strong>SIMULATION</strong>
+        </div>
+
       </div>
 
     </section>
 
 
-    <section class="system-grid">
+    <!-- SYSTEM MODULES -->
 
-      <a href="./frontend/dashboard.html" class="system-card">
-        <strong>DASHBOARD</strong>
-        <span>System Overview</span>
-      </a>
+    <section class="module-section">
 
-      <a href="./frontend/radar.html" class="system-card">
-        <strong>RADAR</strong>
-        <span>Network Scanner</span>
-      </a>
+      <div class="section-heading">
+        <span class="section-line"></span>
+        <h2>وحدات النظام</h2>
+        <span class="section-caption">SYSTEM MODULES</span>
+      </div>
 
-      <a href="./frontend/sensors.html" class="system-card">
-        <strong>SENSORS</strong>
-        <span>Device Sensors</span>
-      </a>
+      <div class="system-grid">
 
-      <a href="./frontend/history.html" class="system-card">
-        <strong>HISTORY</strong>
-        <span>System Records</span>
-      </a>
+        <a href="./frontend/dashboard.html" class="system-card">
+          <span class="card-icon">▦</span>
+          <strong>لوحة القيادة</strong>
+          <small>Dashboard</small>
+          <span class="card-arrow">↗</span>
+        </a>
 
-      <a href="./frontend/alerts.html" class="system-card">
-        <strong>ALERTS</strong>
-        <span>Security Events</span>
-      </a>
+        <a href="./frontend/radar.html" class="system-card">
+          <span class="card-icon">◎</span>
+          <strong>الرادار</strong>
+          <small>Radar Scanner</small>
+          <span class="card-arrow">↗</span>
+        </a>
 
-      <a href="./frontend/settings.html" class="system-card">
-        <strong>SETTINGS</strong>
-        <span>Core Configuration</span>
-      </a>
+        <a href="./frontend/sensors.html" class="system-card">
+          <span class="card-icon">⌁</span>
+          <strong>المستشعرات</strong>
+          <small>Device Sensors</small>
+          <span class="card-arrow">↗</span>
+        </a>
+
+        <a href="./frontend/history.html" class="system-card">
+          <span class="card-icon">◷</span>
+          <strong>السجل</strong>
+          <small>System History</small>
+          <span class="card-arrow">↗</span>
+        </a>
+
+        <a href="./frontend/alerts.html" class="system-card">
+          <span class="card-icon">△</span>
+          <strong>التنبيهات</strong>
+          <small>System Alerts</small>
+          <span class="card-arrow">↗</span>
+        </a>
+
+        <a href="./frontend/settings.html" class="system-card">
+          <span class="card-icon">⚙</span>
+          <strong>الإعدادات</strong>
+          <small>Core Settings</small>
+          <span class="card-arrow">↗</span>
+        </a>
+
+      </div>
 
     </section>
 
 
-    <section id="status" class="system-status">
-      DRAGON CORE INITIALIZING...
-    </section>
+    <!-- FOOTER -->
 
+    <footer class="dragon-footer">
 
-    <footer>
-      DRAGON-RADAR // HUMAN INTELLIGENCE SYSTEM
+      <span>DRAGON-RADAR</span>
+
+      <span>HUMAN INTELLIGENCE SYSTEM</span>
+
+      <span>VERSION 1.0</span>
+
     </footer>
 
   </main>
 
+
+  <!-- KEEP THE EXISTING CORE CONNECTION -->
 
   <script type="module" src="./frontend/app.js"></script>
 
