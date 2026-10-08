@@ -1,33 +1,119 @@
 <!doctype html>
 <html lang="ar" dir="rtl">
+
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <title>DRAGON-RADAR</title>
 
   <link rel="stylesheet" href="./frontend/styles.css">
 </head>
 
 <body>
+
   <main>
-    <h1>DRAGON-RADAR</h1>
 
-    <p>Internet & Device Radar Core</p>
+    <div class="dragon-header">
 
-    <nav>
-      <a href="./frontend/dashboard.html">Dashboard</a>
-      <a href="./frontend/radar.html">Radar</a>
-      <a href="./frontend/sensors.html">Sensors</a>
-      <a href="./frontend/history.html">History</a>
-      <a href="./frontend/alerts.html">Alerts</a>
-      <a href="./frontend/settings.html">Settings</a>
-    </nav>
+      <div>
+        <span class="dragon-label">
+          DRAGON // SYSTEM
+        </span>
 
-    <section id="status">
-      Core جاهز للعمل.
+        <h1>DRAGON-RADAR</h1>
+
+        <p>
+          Internet & Device Intelligence Core
+        </p>
+      </div>
+
+      <div class="core-indicator">
+        <span class="core-dot"></span>
+        CORE ONLINE
+      </div>
+
+    </div>
+
+
+    <section class="radar-panel">
+
+      <div class="panel-title">
+        <span>RADAR CORE</span>
+        <span>LIVE</span>
+      </div>
+
+      <div class="radar-preview">
+
+        <div class="radar-circle">
+          <div class="radar-scan"></div>
+
+          <div class="radar-cross horizontal"></div>
+          <div class="radar-cross vertical"></div>
+
+          <div class="radar-core">
+            DRAGON
+          </div>
+        </div>
+
+      </div>
+
+      <div class="radar-status">
+        <span>● SCANNING</span>
+        <span>SYSTEM READY</span>
+      </div>
+
     </section>
+
+
+    <section class="system-grid">
+
+      <a href="./frontend/dashboard.html" class="system-card">
+        <strong>DASHBOARD</strong>
+        <span>System Overview</span>
+      </a>
+
+      <a href="./frontend/radar.html" class="system-card">
+        <strong>RADAR</strong>
+        <span>Network Scanner</span>
+      </a>
+
+      <a href="./frontend/sensors.html" class="system-card">
+        <strong>SENSORS</strong>
+        <span>Device Sensors</span>
+      </a>
+
+      <a href="./frontend/history.html" class="system-card">
+        <strong>HISTORY</strong>
+        <span>System Records</span>
+      </a>
+
+      <a href="./frontend/alerts.html" class="system-card">
+        <strong>ALERTS</strong>
+        <span>Security Events</span>
+      </a>
+
+      <a href="./frontend/settings.html" class="system-card">
+        <strong>SETTINGS</strong>
+        <span>Core Configuration</span>
+      </a>
+
+    </section>
+
+
+    <section id="status" class="system-status">
+      DRAGON CORE INITIALIZING...
+    </section>
+
+
+    <footer>
+      DRAGON-RADAR // HUMAN INTELLIGENCE SYSTEM
+    </footer>
+
   </main>
 
+
   <script type="module" src="./frontend/app.js"></script>
+
 </body>
 </html>
